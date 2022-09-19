@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+/* parent component */
+
+section {
+  background-color: hsl(120, 25%, 65%);
+  width: 300px;
+  height: 380px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+
+section::before {
+  content: 'parent';
+  color: hsl(120, 25%, 80%);
+}
+
+/* child component */
+
+article {
+  background-color: hsl(120, 100%, 25%);
+  margin: 25px;
+  width: 250px;
+  height: 140px;
+  border-radius: 4px;
+}
+
+article::before {
+  content: 'child';
+  color: hsl(120, 100%, 35%);
+}
