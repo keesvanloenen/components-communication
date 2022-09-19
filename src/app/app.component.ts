@@ -15,19 +15,19 @@ import { Component } from "@angular/core";
         </button>
         <button mat-menu-item [matMenuTriggerFor]="parentToChildInput">
           <mat-icon>input</mat-icon>
-          <span>1. Parent sends data to Child 👈</span>
+          <span>1. Parent sends data to Child 💗</span>
+        </button>
+        <button mat-menu-item routerLink="/scenario/2">
+          <mat-icon>output</mat-icon>
+          <span>2. Child sends data to Parent 💗</span>
         </button>
         <button mat-menu-item routerLink="/scenario/3">
-          <mat-icon>output</mat-icon>
-          <span>2. Child sends data to Parent 👈</span>
-        </button>
-        <button mat-menu-item routerLink="/scenario/4">
           <mat-icon>link</mat-icon>
           <span>3. Parent references Child, template only</span>
         </button>
         <button mat-menu-item [matMenuTriggerFor]="parentReferencesChild">
           <mat-icon>visibility</mat-icon>
-          <span>4. Parent references Child 👈</span>
+          <span>4. Parent references Child 💗</span>
         </button>
         <button mat-menu-item [matMenuTriggerFor]="parentProjectsDataIntoChild">
           <mat-icon>videocam</mat-icon>
@@ -36,34 +36,34 @@ import { Component } from "@angular/core";
       </mat-menu>
 
       <mat-menu #parentToChildInput="matMenu">
-        <button mat-menu-item routerLink="/scenario/1">
-          <span>a. not using lifecycle hook 👈</span>
+        <button mat-menu-item routerLink="/scenario/1a">
+          <span>a. not using lifecycle hook 💗</span>
         </button>
-        <button mat-menu-item routerLink="/scenario/2">
-          <span>b. using lifecycle hook 👈</span>
+        <button mat-menu-item routerLink="/scenario/1b">
+          <span>b. using lifecycle hook 💗</span>
         </button>
       </mat-menu>
 
       <mat-menu #parentReferencesChild="matMenu">
-        <button mat-menu-item routerLink="/scenario/5">
-          <span>a. not using lifecycle hook 👈</span>
+        <button mat-menu-item routerLink="/scenario/4a">
+          <span>a. not using lifecycle hook 💗</span>
         </button>
-        <button mat-menu-item routerLink="/scenario/6">
-          <span>b. using lifecycle hook 👈</span>
+        <button mat-menu-item routerLink="/scenario/4b">
+          <span>b. using lifecycle hook 💗</span>
         </button>
-        <button mat-menu-item routerLink="/scenario/7">
+        <button mat-menu-item routerLink="/scenario/4c">
           <span>c. more children</span>
         </button>
       </mat-menu>
       
       <mat-menu #parentProjectsDataIntoChild="matMenu">
-        <button mat-menu-item routerLink="/scenario/8">
+        <button mat-menu-item routerLink="/scenario/5a">
           <span>a. using one slot, no lifecycle hook</span>
         </button>
-        <button mat-menu-item routerLink="/scenario/9">
+        <button mat-menu-item routerLink="/scenario/5b">
           <span>b. using more slots, no lifecycle hook</span>
         </button>
-        <button mat-menu-item routerLink="/scenario/10">
+        <button mat-menu-item routerLink="/scenario/5c">
           <span>c. using more slots and lifecycle hook</span>
         </button>
       </mat-menu>
